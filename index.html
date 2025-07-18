@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="view-transition" content="same-origin">
+    <title>USVI Retreats</title>
+    <link rel="stylesheet" href="src/styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="public/Pictures/USVI Retreats Logo_v2.webp" type="image/webp">
+
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div id="branding">
+                <a href="index.html" class="logo-link">
+                    <img src="public/Pictures/USVI Retreats Logo_v2.webp" alt="USVI Retreats Logo" class="logo-image">
+                    <h1 class="site-title">USVI Retreats</h1>
+                </a>
+            </div>
+            <nav>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="accommodations.html">Accommodations</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <!-- Auth Toggle / User Menu -->
+                    <li class="auth-container">
+                        <div id="auth-status">
+                            <button id="auth-toggle" class="auth-toggle" style="display: block;">Login</button>
+
+                            <!-- User Menu: Shown when logged in -->
+                            <div id="user-menu" class="user-menu" style="display: none;">
+                                <span id="user-display" class="user-email-display"></span>
+                                <button id="logout-btn" class="logout-button">Logout</button>
+                            </div>
+
+                            <!-- Auth Form Dropdown: Shown by auth-toggle when logged out -->
+                            <div id="auth-form" class="auth-form">
+                                <form id="auth-form-content">
+                                    <label for="headerAuthEmail" class="sr-only">Email</label>
+                                    <input type="email" id="headerAuthEmail" name="email" placeholder="Enter your email"
+                                        required autocomplete="email">
+                                    <button type="submit" id="send-link-btn">Send Login Link</button>
+                                </form>
+                                <hr class="auth-form-divider">
+                                <button type="button" id="google-login-btn-header" class="google-login-button">Login
+                                    with Google</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <button class="custom-cart-toggle">Cart</button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <main>
+        <!-- Showcase Section -->
+        <section id="showcase">
+            <div class="container">
+                <div class="showcase-content">
+                    <h1>Visit Paradise</h1>
+                    <p>Explore new adventures</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Retreat Experience Section -->
+        <section id="retreat-experience">
+            <div class="container">
+                <div class="mission-statement">
+                    <h2>The Ultimate Caribbean Retreat Experience</h2>
+                    <p>Experience the perfect blend of luxury, creativity, and Caribbean hospitality. Our comprehensive
+                        retreat packages are designed to provide an immersive experience that
+                        combines world-class settings with curated services, allowing you to focus on what matters
+                        most - whether that's artistic inspiration, business development, or personal renewal.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Retreat Packages Section -->
+        <section id="retreat-packages">
+            <div class="container">
+                <div class="mission-statement">
+                    <h2>Curated Retreat Packages</h2>
+                    <p>Choose from our specially designed retreat experiences, each offering a unique blend of luxury
+                        accommodation, personalized services, and authentic Caribbean experiences.</p>
+                </div>
+
+                <div class="package-grid">
+                    <!-- Artist Retreat Package -->
+                    <div class="package-box">
+                        <img src="public/Pictures/villas/Villa Alhambra.webp" alt="Artist Retreat at Estate St. Peter">
+                        <h3>Artist Retreat</h3>
+                        <p>4 Days, 3 Nights for 6 Guests</p>
+                        <p><strong>Pricing available upon request</strong></p>
+
+                        <button class="btn btn-info" data-toggle="collapse" data-target="#artist-retreat-flavor">More
+                            Info</button>
+
+                        <div id="artist-retreat-flavor" class="flavor-content">
+                            <p><strong>Welcome to USVI Retreats: A Sanctuary for the Inspired</strong></p>
+                            <p>Nestled in the heart of the U.S. Virgin Islands, USVI Retreats is a transformative haven
+                                for artists who crave connection, creativity, and Caribbean beauty. Our curated
+                                long-weekend retreats bring together visionary creators from around the world to build,
+                                explore, and elevate their craft together.</p>
+                            <p>Whether you’re a painter, poet, sculptor, filmmaker, or multidisciplinary innovator, this
+                                is your space to push boundaries, spark ideas, and be immersed in the extraordinary.</p>
+
+                            <h3 class="collapsible-heading">The Experience</h3>
+                            <div class="collapsible-content">
+                                <p>Our retreats are designed to nourish every part of the artist’s soul with every
+                                    detail including waking to the gentle rhythm of waves, surrounded by lush landscapes
+                                    and the vibrant colors of island life, immersive workshops, open studios, guided
+                                    collaborations, and time to simply breathe, reflect, and create.</p>
+
+                                <ul class="flavor-textList">
+                                    <li><strong>Curated Creative Sessions:</strong> Daily experiences led by renowned
+                                        guest artists and facilitators designed to unlock new ways of thinking and
+                                        making.</li>
+                                    <li><strong>Collaborative Projects:</strong> Share your voice. Join forces. Create
+                                        something bold, something meaningful together.</li>
+                                    <li><strong>Island Inspiration:</strong> Let the energy of the Caribbean infuse your
+                                        work. From sunrise sketch sessions to sunset salons, every moment is an
+                                        opportunity to connect with nature, with fellow artists, and with yourself.</li>
+                                    <li><strong>Luxury Meets Intention:</strong> Enjoy premium accommodations,
+                                        nourishing cuisine, and wellness offerings all seamlessly integrated to support
+                                        your creative flow.</li>
+                                </ul>
+                            </div>
+
+                            <h3 class="collapsible-heading">Why USVI Retreats?</h3>
+                            <div class="collapsible-content">
+                                <p>We are more than a destination, we are a movement. A gathering of artists who believe
+                                    that the best work comes from connection, curiosity, and courageous expression. This
+                                    is your invitation to step away from the noise, and step into a space that
+                                    celebrates your artistry, whatever it may be.</p>
+                                <p>Join us. Create something unforgettable.</p>
+                            </div>
+
+                            <h3 class="collapsible-heading">Upcoming Retreats</h3>
+                            <div class="collapsible-content">
+                                <h4>St. Thomas | 2026</h4>
+                                <p><strong>Theme:</strong> Echoes of the Earth – Exploring nature, memory, and material
+                                    through collaborative installation and performance.</p>
+                                <p><em>Limited spots available.</em></p>
+                            </div>
+
+                            <h3 class="collapsible-heading">Who It’s For</h3>
+                            <div class="collapsible-content">
+                                <ul class="flavor-textList">
+                                    <li>Established and emerging artists across all disciplines</li>
+                                    <li>Creatives seeking deep collaboration and growth</li>
+                                    <li>Those ready to explore the intersection of art, nature, and community</li>
+                                </ul>
+                            </div>
+
+                            <h3 class="collapsible-heading">What’s Included</h3>
+                            <div class="collapsible-content">
+                                <ul class="flavor-textList">
+                                    <li>4 days / 3 nights in luxury island accommodations</li>
+                                    <li>All meals curated by local chefs</li>
+                                    <li>Daily artistic workshops & mentorship</li>
+                                    <li>Studio & creation spaces</li>
+                                    <li>Cultural excursions & island experiences</li>
+                                    <li>Wellness programming (yoga, meditation, beach walks)</li>
+                                    <li>Roundtrip transfers from the island airport</li>
+                                </ul>
+                            </div>
+                            <h3 class="collapsible-heading">Your Canvas Awaits</h3>
+                            <div class="collapsible-content">
+                                <p>USVI Retreats isn’t just about what you create… It’s about who you become in the
+                                    process.</p>
+                                <p>With the ocean as your soundtrack, the island as your muse, let this retreat be your
+                                    next masterpiece.</p>
+                            </div>
+                            <div class="booking-container">
+                                <button class="booking-btn" data-package="artist-retreat">Check Availability</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- External Host Package -->
+                    <div class="package-box">
+                        <img src="public/Pictures/villas/Tower Villa.webp" alt="External Host Retreat">
+                        <h3>External Host & Upgrades</h3>
+                        <p>Premium hosted retreat experience</p>
+                        <p><strong>Inquire for rates</strong></p>
+
+                        <button class="btn btn-info" data-toggle="collapse" data-target="#external-host-flavor">More
+                            Info</button>
+
+                        <div id="external-host-flavor" class="flavor-content">
+                            <p>A fully-hosted premium retreat experience with professional support and luxury upgrades.
+                            </p>
+                            <ul class="flavor-textList">
+                                <li>St. Thomas Villa with premium accommodations</li>
+                                <li>Daily catering (1 meal per day included)</li>
+                                <li>Transport Package with dedicated driver</li>
+                                <li>Concierge & Liaison services</li>
+                                <li>Additional daily meal upgrade</li>
+                                <li>Professional coordination and communication support</li>
+                                <li>Customizable experience based on your needs</li>
+                            </ul>
+                            <div class="booking-container">
+                                <button class="booking-btn" data-package="external-host-retreat">Check
+                                    Availability</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Focused Section on Retreats -->
+        <section id="retreat-focus">
+            <div class="container">
+                <div class="mission-statement">
+                    <p> <strong>Find your own little slice of paradise</strong>, where lush
+                        green hills meet turquoise waters, and luxury accommodations await your perfect getaway.
+                    </p>
+                    <hr class="section-separator">
+                    <p><strong>Located on the pristine shores of St. Thomas</strong>, our exclusive retreats offer a
+                        sanctuary where luxury meets authenticity. From unique accommodations to personalized services,
+                        every detail is crafted to exceed your expectations and create lasting memories in paradise.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Creative Retreat Application Section -->
+    <section id="creative-retreat-application" class="container">
+        <h2>USVI Creative Retreat Application – 2026</h2>
+        <p class="mission-statement form-intro-text">
+            This isn’t just a getaway. It’s a shared space for artistic exploration, creative rhythm, and honest
+            presence. These retreats are for those ready to create not from pressure—but from stillness, trust, and deep
+            collaboration. If you’re feeling called, begin here. Take your time. There’s no rush.
+        </p>
+        <form id="creativeRetreatForm" class="styled-form multi-step-form">
+            <!-- Step 1: Basic Info -->
+            <div class="form-step active-step" data-step="1">
+                <h4>Step 1: Your Details</h4>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="crFullName">Full Name (Required)</label>
+                        <input type="text" id="crFullName" name="fullName" required autocomplete="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="crEmail">Email (Required)</label>
+                        <input type="email" id="crEmail" name="email" required autocomplete="email">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="crPhone">Phone (Optional)</label>
+                        <input type="tel" id="crPhone" name="phone" autocomplete="tel">
+                    </div>
+                    <div class="form-group">
+                        <label for="crLocation">Where are you based? (Required)</label>
+                        <input type="text" id="crLocation" name="location" required autocomplete="address-level2">
+                    </div>
+                </div>
+                <div class="form-group" id="retreatDatesGroup">
+                    <label for="crRetreatDates">Which retreat dates are you interested in? (Required)</label>
+                    <select id="crRetreatDates" name="retreatDates" required>
+                        <option value="">Select dates...</option>
+                        <option value="2026-jun-05-08">June 5-8, 2026</option>
+                        <option value="2026-jul-10-13">July 10-13, 2026</option>
+                        <option value="2026-aug-14-17">August 14-17, 2026</option>
+                        <option value="other">Other/Flexible (Please specify below)</option>
+                    </select>
+                    <p id="crSelectedDatesFromCart" class="selected-dates-cart-info"></p>
+                    <input type="hidden" id="crHiddenRetreatDates">
+                </div>
+                <div class="form-navigation">
+                    <button type="button" class="btn-next">Next</button>
+                </div>
+            </div>
+
+            <!-- Step 2: Creative Background -->
+            <div class="form-step" data-step="2">
+                <h4>Step 2: Your Creative Practice</h4>
+                <div class="form-group">
+                    <label for="crWhatYouCreate">What do you create, build or lead? (Required)</label>
+                    <p class="form-hint">“You don’t need to be a professional artist. But we are all creators. Tell me
+                        how you express yours.”</p>
+                    <textarea id="crWhatYouCreate" name="whatYouCreate" rows="5" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="crCraft">What do you consider your craft? (Required)</label>
+                    <textarea id="crCraft" name="craft" rows="5" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="crMostAlive">Where do you feel most alive in your work or practice? (Required)</label>
+                    <textarea id="crMostAlive" name="mostAlive" rows="5" required></textarea>
+                </div>
+                <div class="form-navigation">
+                    <button type="button" class="btn-prev">Previous</button>
+                    <button type="button" class="btn-next">Next</button>
+                </div>
+            </div>
+
+            <!-- Step 3: Retreat Intentions & Logistics -->
+            <div class="form-step" data-step="3">
+                <h4>Step 3: Intentions & Logistics</h4>
+                <div class="form-group">
+                    <label for="crWhyDrawn">Why are you drawn to this retreat now? (Required)</label>
+                    <textarea id="crWhyDrawn" name="whyDrawn" rows="5" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="crConnection">What kind of connection or collaboration are you craving?
+                        (Required)</label>
+                    <textarea id="crConnection" name="connection" rows="5" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="crHopeToReturn">What do you hope to return with? (Required)</label>
+                    <textarea id="crHopeToReturn" name="hopeToReturn" rows="5" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="crAccessibility">Do you have any accessibility or accommodation needs?
+                        (Optional)</label>
+                    <textarea id="crAccessibility" name="accessibility" rows="3"></textarea>
+                </div>
+                <div class="form-group" id="paymentPreferenceGroup">
+                    <label>How do you prefer to invest in this kind of experience? (Required)</label>
+                    <div><input type="radio" id="payInFull" name="paymentPreference" value="pay_in_full" required><label
+                            for="payInFull">Ready to pay in full</label></div>
+                    <div><input type="radio" id="paymentPlan" name="paymentPreference" value="payment_plan"><label
+                            for="paymentPlan">Payment plan</label></div>
+                    <div><input type="radio" id="scholarship" name="paymentPreference" value="scholarship"><label
+                            for="scholarship">Explore partial scholarship</label></div>
+                    <div><input type="radio" id="notSure" name="paymentPreference" value="not_sure"><label
+                            for="notSure">Not sure yet</label></div>
+                </div>
+                <div class="form-group">
+                    <label for="crAnythingElse">Anything else you want to share, ask, or leave here? (Optional)</label>
+                    <textarea id="crAnythingElse" name="anythingElse" rows="3"></textarea>
+                </div>
+                <div class="form-navigation">
+                    <button type="button" class="btn-prev">Previous</button>
+                    <button type="submit" class="btn-book">Submit Application</button>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="package-grid">
+                <!-- Company Info -->
+                <div class="flavor-content active">
+                    <h3>USVI Retreats</h3>
+                    <ul class="flavor-textList">
+                        <li>St. Thomas, USVI</li>
+                        <li>Contact: +1 (970) 689-1500</li>
+                        <li>Email: admin@usviretreats.com</li>
+                    </ul>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="flavor-content active">
+                    <h3>Quick Links</h3>
+                    <ul class="flavor-textList">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="yachts.html">Yachts</a></li>
+                        <li><a href="accommodations.html">Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div class="flavor-content active">
+                    <h3>Our Services</h3>
+                    <ul class="flavor-textList">
+                        <li>Luxury Villas</li>
+                        <li>Private Catering</li>
+                        <li>Concierge Service</li>
+                        <li>Airport Transfers</li>
+                    </ul>
+                </div>
+
+                <!-- Follow Us -->
+                <div class="flavor-content active">
+                    <h3>Follow Us</h3>
+                    <ul class="flavor-textList">
+                        <li>Instagram</li>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>LinkedIn</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="mission-statement footer-copyright"
+            style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap; padding: 1rem 0;">
+            <img src="public/Pictures/USVI Retreats Logo_v2.webp" alt="USVI Retreats Logo"
+                style="height: 30px; margin-right: 10px;">
+            <span>USVI Retreats, LLC &copy; 2024 | All Rights Reserved | Privacy Policy | Terms of Service</span>
+        </div>
+    </footer>
+
+    <button id="backToTop" title="Go to top">↑</button>
+    <button class="cart-float">
+        <i class="fa fa-shopping-cart"></i>
+        <span class="cart-count">0</span>
+    </button>
+
+    <div class="cart-panel">
+        <div class="cart-items">
+            <!-- Cart items will be populated here via JavaScript -->
+        </div>
+        <div class="cart-total">
+            <span>Total:</span>
+            <span class="total-amount">Quote Request</span>
+        </div>
+        <button class="checkout-btn">Checkout</button>
+    </div>
+
+    <!-- Booking Calendar Modal -->
+    <div id="calendarModal" class="calendar-modal">
+        <div class="calendar-content">
+            <button class="close-calendar">&times;</button>
+            <h3 class="calendar-title">Book Your Stay</h3>
+
+            <!-- Date Selection Display -->
+            <div id="selectedDates">
+                <span id="checkInDisplay">Check-in: Not selected</span>
+                <span id="checkOutDisplay">Check-out: Not selected</span>
+            </div>
+
+            <!-- Calendar -->
+            <div class="calendar-header">
+                <button id="prevMonth">&larr;</button>
+                <h3 id="currentMonth"></h3>
+                <button id="nextMonth">&rarr;</button>
+            </div>
+            <div class="calendar-grid" id="calendarGrid"></div>
+
+            <!-- Booking Options -->
+            <div class="booking-options">
+                <div class="guests-rooms-section">
+                    <div class="input-group">
+                        <label for="guestCount">Guests</label>
+                        <div class="number-input">
+                            <button type="button" class="decrease">-</button>
+                            <input type="number" id="guestCount" min="1" max="10" value="1">
+                            <button type="button" class="increase">+</button>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <label for="roomCount">Rooms</label>
+                        <div class="number-input">
+                            <button type="button" class="decrease">-</button>
+                            <input type="number" id="roomCount" min="1" max="5" value="1">
+                            <button type="button" class="increase">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="services-section">
+                    <h4>Additional Services</h4>
+                    <div class="services-options">
+                        <div class="service-option">
+                            <input type="checkbox" id="cateringService" data-price="750">
+                            <label for="cateringService">Daily Catering</label>
+                        </div>
+                        <div class="service-option">
+                            <input type="checkbox" id="transportService" data-price="550">
+                            <label for="transportService">Airport Transport & Insurance</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="total-section">
+                    <span class="total-label">Estimated Total:</span>
+                    <span class="total-amount" id="totalAmount">Quote on Request</span>
+                </div>
+            </div>
+
+            <button id="confirmDates" class="confirm-dates" disabled>Set Booking</button>
+        </div>
+    </div>
+
+    <div id="bookingOrb" class="booking-orb modal-btn">
+        <span class="booking-orb-icon">📅</span>
+    </div>
+
+    <div class="booking-details-panel">
+        <div class="booking-detail-item">
+            <span>Property:</span>
+            <span id="orbProperty"></span>
+        </div>
+        <div class="booking-detail-item">
+            <span>Check-in:</span>
+            <span id="orbCheckIn"></span>
+        </div>
+        <div class="booking-detail-item">
+            <span>Check-out:</span>
+            <span id="orbCheckOut"></span>
+        </div>
+        <div class="booking-detail-item">
+            <span>Guests:</span>
+            <span id="orbGuests"></span>
+        </div>
+        <div class="booking-detail-item">
+            <span>Services:</span>
+            <span id="orbServices"></span>
+        </div>
+        <div class="booking-detail-item">
+            <span>Total:</span>
+            <span id="orbTotal"></span>
+        </div>
+    </div>
+
+    <div id="bookingInquiryModal" class="inquiry-modal">
+        <div class="inquiry-content">
+            <button class="close-inquiry">&times;</button>
+            <h3>Complete Your Booking Request</h3>
+            <div id="bookingSummary" class="booking-summary">
+                <!-- Filled dynamically -->
+            </div>
+            <form id="inquiryForm" class="inquiry-form">
+                <div class="form-group">
+                    <label for="inquiryFullName" class="sr-only">Full Name</label>
+                    <input type="text" id="inquiryFullName" name="fullName" placeholder="Full Name" required
+                        autocomplete="name">
+                </div>
+                <div class="form-group">
+                    <label for="inquiryEmail" class="sr-only">Email Address</label>
+                    <input type="email" id="inquiryEmail" name="email" placeholder="Email Address" required
+                        autocomplete="email">
+                </div>
+                <div class="form-group">
+                    <label for="inquiryPhone" class="sr-only">Phone Number</label>
+                    <input type="tel" id="inquiryPhone" name="phone" placeholder="Phone Number" required
+                        pattern="[0-9]{10}" autocomplete="tel" title="Please enter a valid 10-digit phone number">
+                </div>
+                <div class="form-group">
+                    <label for="inquirySpecialRequests" class="sr-only">Special Requests or Questions</label>
+                    <textarea id="inquirySpecialRequests" name="specialRequests"
+                        placeholder="Special Requests or Questions"></textarea>
+                </div>
+                <button type="submit" class="submit-inquiry">Submit Booking Request</button>
+            </form>
+        </div>
+    </div>
+    <!-- Auth Modal -->
+    <div id="auth-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="document.getElementById('auth-modal').style.display='none'">&times;</span>
+            <form id="modal-auth-form-content">
+                <div id="login-section">
+                    <h2>Login with Email Link</h2>
+                    <label for="modalAuthEmail" class="sr-only">Email</label>
+                    <input type="email" id="modalAuthEmail" name="email" placeholder="Enter your email" required
+                        autocomplete="email">
+                    <button type="submit">Send Login Link</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Example: User Menu Template (if used by JS to clone) -->
+    <!-- <div id="user-menu-template" class="user-menu" style="display: none;">
+        <div id="user-display-template"></div>
+        <button id="logout-btn-template">Logout</button>
+    </div> -->
+
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js" defer></script>
+    <!-- Firebase scripts - Load BEFORE your main module script -->
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js" defer></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js" defer></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-analytics-compat.js" defer></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js" defer></script>
+
+    <script type="module" src="./src/components/index.js"></script>
+
+</body>
+
+</html>

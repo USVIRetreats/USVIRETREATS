@@ -1,0 +1,49 @@
+{
+    "transport": {
+      "standardPackage": {
+        "id": "standard-transport",
+        "name": "Airport Transport & Insurance",
+        "pricePerPackage": 550,
+        "duration": 4,
+        "description": "Complete transportation service for your stay",
+        "features": [
+          "Airport pickup and drop-off",
+          "Insurance coverage",
+          "Island tours included",
+          "24/7 availability",
+          "Professional drivers"
+        ],
+        "packageDates": {
+          "march": {
+            "dates": "2025-03-20 to 2025-03-23",
+            "basePrice": 550
+          },
+          "april1": {
+            "dates": "2025-04-03 to 2025-04-06",
+            "basePrice": 550
+          },
+          "april2": {
+            "dates": "2025-04-17 to 2025-04-20",
+            "basePrice": 550
+          },
+          "april3": {
+            "dates": "2025-04-24 to 2025-04-27",
+            "basePrice": 550
+          },
+          "may1": {
+            "dates": "2025-05-08 to 2025-05-11",
+            "basePrice": 550
+          },
+          "may2": {
+            "dates": "2025-05-15 to 2025-05-18",
+            "basePrice": 550
+          },
+          "may3": {
+            "dates": "2025-05-29 to 2025-06-01",
+            "basePrice": 550
+          }
+        },
+        "image": "/public/Pictures/transport/shuttle1.webp"
+      }
+    }
+  }

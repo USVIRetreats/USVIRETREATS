@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="view-transition" content="same-origin" />
+    <title>Completing Login - USVI Retreats</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/styles/style.css" />
+    <link rel="icon" href="public/Pictures/USVI Retreats Logo_v2.webp" type="image/webp">
+    <style>
+      .login-complete-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        text-align: center;
+        padding: 2rem;
+        background: linear-gradient(to bottom left, #87ceeb 40%, #ffdda9 100%);
+        color: white;
+      }
+
+      .login-complete-container h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+
+      #status-message {
+        background: rgba(255, 255, 255, 0.2);
+        padding: 1rem;
+        border-radius: 0.5rem;
+        margin-top: 1rem;
+        max-width: 80%;
+      }
+
+      .error-message {
+        color: #ff6b6b;
+        background: rgba(255, 255, 255, 0.8);
+        padding: 1rem;
+        border-radius: 0.5rem;
+        margin-top: 1rem;
+      }
+
+      .home-button {
+        margin-top: 2rem;
+        padding: 0.75rem 1.5rem;
+        background-color: white;
+        color: #87ceeb;
+        border: none;
+        border-radius: 0.25rem;
+        font-family: "Oswald", sans-serif;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        text-decoration: none;
+        display: inline-block;
+      }
+
+      .home-button:hover {
+        background-color: #ffdda9;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <a
+      href="index.html"
+      style="display: flex; align-items: center; text-decoration: none"
+    >
+      <img
+        src="public/Pictures/USVI Retreats Logo_v2.webp"
+        alt="USVI Retreats Logo"
+        style="height: 50px; margin-right: 10px"
+      />
+      <h1 style="margin: 0">USVI Retreats</h1>
+    </a>
+    <div class="login-complete-container">
+      <h2>Completing Your Login</h2>
+      <p>Please wait while we verify your email...</p>
+      <div id="status-message">Processing your login request...</div>
+      <a href="index.html" class="home-button">Return to Home</a>
+    </div>
+
+    <!-- Firebase scripts -->
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
+
+    <!-- Use module script to load login handler -->
+    <script type="module">
+      // Import the login handler
+      import "./src/components/login-handler.js";
+    </script>
+  </body>
+</html>

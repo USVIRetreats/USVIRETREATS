@@ -1,0 +1,79 @@
+{
+    "yachts": {
+      "luxuryYacht": {
+        "id": "luxury-yacht",
+        "name": "Luxury Yacht",
+        "description": "Ultimate luxury sailing experience",
+        "basePrice": 2500,
+        "perDay": true,
+        "features": [
+          "80-foot luxury vessel with full crew",
+          "Master suite and 3 guest cabins",
+          "Gourmet chef and premium bar service",
+          "Water sports equipment included"
+        ],
+        "maxGuests": 8,
+        "availableDates": [
+          {
+            "start": "2025-03-20",
+            "end": "2025-03-23"
+          },
+          {
+            "start": "2025-04-03",
+            "end": "2025-04-06"
+          }
+        ],
+        "image": "/public/Pictures/yachts/yacht1.webp"
+      },
+      "catamaran": {
+        "id": "catamaran",
+        "name": "Catamaran",
+        "description": "Stable and spacious sailing",
+        "basePrice": 1800,
+        "perDay": true,
+        "features": [
+          "45-foot catamaran with experienced captain",
+          "Spacious deck and lounging areas",
+          "Snorkeling equipment included",
+          "Perfect for families and groups"
+        ],
+        "maxGuests": 6,
+        "availableDates": [
+          {
+            "start": "2025-03-20",
+            "end": "2025-03-23"
+          },
+          {
+            "start": "2025-04-03",
+            "end": "2025-04-06"
+          }
+        ],
+        "image": "/public/Pictures/yachts/yacht2.webp"
+      },
+      "speedboat": {
+        "id": "speedboat",
+        "name": "Speedboat",
+        "description": "Fast and thrilling experience",
+        "basePrice": 1200,
+        "perDay": true,
+        "features": [
+          "35-foot speedboat with professional captain",
+          "Water sports equipment included",
+          "Ideal for day trips and island hopping",
+          "High-performance vessel"
+        ],
+        "maxGuests": 4,
+        "availableDates": [
+          {
+            "start": "2025-03-20",
+            "end": "2025-03-23"
+          },
+          {
+            "start": "2025-04-03",
+            "end": "2025-04-06"
+          }
+        ],
+        "image": "/public/Pictures/yachts/yacht3.webp"
+      }
+    }
+  }

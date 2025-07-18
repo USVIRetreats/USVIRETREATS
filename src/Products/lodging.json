@@ -1,0 +1,67 @@
+{
+  "lodgingCategories": {
+    "villaLodging": {
+      "details": {
+        "id": "villa-mirage",
+        "type": "villa",
+        "name": "Villa Mirage",
+        "description": "Luxurious villa overlooking St. John",
+        "features": [
+          "4 bedrooms, 4.5 bathrooms", 
+          "Infinity pool",
+          "Full kitchen",
+          "Ocean views"
+        ],
+        "image": "/public/Pictures/accommodations/VillaMirage.jpg",
+        "maxGuests": 8,
+        "baseRate": 4121,
+        "additionalServices": {
+          "catering": 750,
+          "transport": 137.50
+        }
+      }
+    },
+    "beachLodging": {
+      "details": {
+        "id": "beach-house",
+        "type": "beach-house", 
+        "name": "The Beach House",
+        "description": "Beachfront retreat in St. Thomas",
+        "features": [
+          "3 bedrooms, 2 bathrooms",
+          "Direct beach access",
+          "Outdoor dining area",
+          "Water sports equipment"
+        ],
+        "image": "/public/Pictures/accommodations/StThomasBeachHouse.jpg",
+        "maxGuests": 8,
+        "baseRate": 3500,
+        "additionalServices": {
+          "catering": 750,
+          "transport": 137.50
+        }
+      }
+    },
+    "innLodging": {
+      "details": {
+        "id": "sea-breeze",
+        "type": "inn",
+        "name": "Sea Breeze Inn",
+        "description": "Historic B&B in Christiansted",
+        "features": [
+          "Classic Caribbean style room",
+          "Complimentary breakfast",
+          "Walking distance to historic sites",
+          "Garden views"
+        ],
+        "image": "/public/Pictures/accommodations/SeaBreezeInn.jpg",
+        "maxGuests": 2,
+        "baseRate": 300,
+        "additionalServices": {
+          "catering": 150,
+          "transport": 137.50
+        }
+      }
+    }
+  }
+ }

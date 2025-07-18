@@ -1,0 +1,24 @@
+{
+  "name": "usviretreats.com",
+  "version": "1.0.0",
+  "description": "Main application for USVIRetreats",
+  "main": "index.js",
+  "dependencies": {
+    "@firebasegen/default-connector": "file:dataconnect-generated/js/default-connector",
+    "firebase": "^11.9.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LustyDesigns/USVIRetreats.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LustyDesigns/USVIRetreats/issues"
+  },
+  "homepage": "https://github.com/LustyDesigns/USVIRetreats#readme"
+}

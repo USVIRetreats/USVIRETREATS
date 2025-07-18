@@ -1,0 +1,12 @@
+# Environment variables
+.env
+.env.*
+
+# Dependency directories
+node_modules/
+bower_components/
+vendor/
+
+# Firebase debug logs
+firebase-debug.log
+firebase-debug.*.log
